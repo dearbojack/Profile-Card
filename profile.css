@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   width: 350px;
@@ -62,6 +63,47 @@ body {
 
 .profile:hover .bio {
   opacity: 0.8;
+}
+
+.social-icons {
+  position: absolute;
+  display: flex;
+  gap: 18px;
+  z-index: 3;
+  bottom: 164px;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons li a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  transition: 0.2s;
+  transform: translateY(32px);
+  opacity: 0;
+}
+
+.social-icons li a svg {
+  color: var(--background);
+  transition: 0.5s;
+}
+
+.social-icons li a:hover svg {
+  color: aliceblue;
+  transition: 0.8s;
+  transform: rotateY(360deg);
+}
+
+.profile:hover .social-icons li a {
+  opacity: 1; 
 }
 
 .profile-info {

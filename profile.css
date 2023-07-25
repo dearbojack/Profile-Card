@@ -71,6 +71,11 @@ body {
   gap: 18px;
   z-index: 3;
   bottom: 164px;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
 }
 
 .social-icons li {
